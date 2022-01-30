@@ -1,0 +1,52 @@
+.banner__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.content {
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.hi {
+  margin-bottom: 20px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  color: aqua;
+}
+
+.name {
+  margin-bottom: 20px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.do {
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: grey;
+}
+
+.about {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

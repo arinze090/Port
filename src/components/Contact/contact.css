@@ -1,0 +1,57 @@
+.contact {
+  background-color: brown;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__container {
+  margin-top: 30px;
+}
+
+.contact__container > h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 40px;
+  color: aqua;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.contacts {
+  margin: 20px;
+  max-width: 80%;
+  background-color: chartreuse;
+}
+
+.content__tags {
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.tag2 {
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.hello {
+  background-color: #0a192f !important;
+  border-radius: 5px;
+  margin: 20px;
+  justify-content: center;
+  height: 70px;
+  width: 170px;
+  border: 1px solid teal;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.hello :hover {
+  background-color: tomato !important;
+  color: tomato;
+}
