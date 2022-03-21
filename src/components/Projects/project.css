@@ -22,9 +22,9 @@
 }
 
 .project {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 30px;
-  color: aqua;
+  color: #001d4a;
   font-weight: bold;
 }
 
@@ -87,7 +87,7 @@ hr {
 
 .projectDetails > p {
   /* margin-left: 10px; */
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 13px;
   color: aqua;
   margin-bottom: 10px;
@@ -113,7 +113,7 @@ hr {
 .projectDescription > p {
   margin: 20px;
   background-color: #112240 !important;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 13px;
   /* color: aqua; */
   /* margin-bottom: 10px; */
@@ -121,7 +121,7 @@ hr {
 
 .codes > p {
   color: whitesmoke;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 13px;
   margin-bottom: 10px;
 }
@@ -131,39 +131,57 @@ hr {
   margin-top: 20px;
 }
 
-.expos {
+.pContain {
+  background-color: pink;
   display: flex;
   flex-direction: row;
-  background-color: saddlebrown;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
 }
 
-.mobile-apps {
-  margin-left: 10px;
-  font-size: 30px;
-  color: aqua;
-  font-family: 'Roboto Mono', monospace;
-  margin-bottom: 30px;
-  margin-top: 30px;
+.images {
+  width: 460px;
+  height: 300px;
+  margin: 10px;
+  background-color: pink;
 }
 
-.expo {
-  display: flex;
+.pLink {
+  background-color: pink;
+  margin-bottom: 20px;
+  margin: 0;
   width: 50%;
-  height: 50%;
-  background-color: red;
+  margin-bottom: 50px;
 }
 
-.mobileApps {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 20px;
+.pText {
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  width: 80%;
+  margin: 20px;
+  background-color: pink;
+  font-family: "Roboto Mono", monospace;
+}
+
+.anchor {
+  text-decoration: none;
+  background-color: pink;
+}
+
+.anchor > p {
+  margin: 20px;
+  color: #001d4a;
+  background-color: pink;
+  font-family: "Roboto Mono", monospace;
+}
+
+.anchor > p:hover {
   color: aqua;
-  font-weight: bold;
-  margin-left: 20px;
-}
-
-.exposh1 {
-  font-size: 20px;
-  font-family: 'Roboto Mono', monospace;
 }
 
 @media screen and (max-width: 768px) {
@@ -186,7 +204,7 @@ hr {
   }
 
   .project {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     font-size: 30px;
     color: aqua;
     font-weight: bold;
@@ -235,7 +253,7 @@ hr {
   }
 
   .projectDetails > p {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     font-size: 13px;
     color: aqua;
     margin-bottom: 10px;
@@ -262,7 +280,7 @@ hr {
     /* margin: 20px; */
     background-color: #112240 !important;
     line-height: 1.5;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     font-size: 13px;
     color: aqua;
     margin-bottom: 10px;
@@ -270,7 +288,7 @@ hr {
 
   .codes > p {
     color: whitesmoke;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     font-size: 13px;
     margin-bottom: 10px;
   }
@@ -288,5 +306,149 @@ hr {
 
   .expo {
     margin-bottom: 30px;
+  }
+
+  .pContain {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    background-color: #001d4a ;
+  }
+
+  .images {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+  }
+
+  .pLink {
+    background-color: blue;
+    margin-bottom: 20px;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .pText {
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    width: 90%;
+    margin: 20px;
+  }
+
+  .anchor {
+    text-decoration: none;
+  }
+
+  .anchor > p {
+    margin: 10px;
+    color: #001d4a;
+  }
+
+  .anchor > p :hover {
+    color: aqua;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pContain {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    background-color: #001d4a;
+  }
+
+  .images {
+    width: 270px;
+    height: 200px;
+    margin: 20px;
+  }
+
+  .pLink {
+    background-color: blue;
+    margin-bottom: 20px;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .pText {
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    width: 90%;
+    margin: 20px;
+    font-size: 15px;
+  }
+
+  .anchor {
+    text-decoration: none;
+  }
+
+  .anchor > p {
+    margin: 10px;
+    color: #001d4a;
+  }
+
+  .anchor > p :hover {
+    color: aqua;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pContain {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    background-color: #001d4a;
+  }
+
+  .images {
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+  }
+
+  .pLink {
+    background-color: blue;
+    margin-bottom: 20px;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .pText {
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    width: 90%;
+    margin: 20px;
+    font-size: 10px;
+  }
+
+  .anchor {
+    text-decoration: none;
+  }
+
+  .anchor > p {
+    margin: 10px;
+    color: #001d4a;
+  }
+
+  .anchor > p :hover {
+    color: aqua;
   }
 }

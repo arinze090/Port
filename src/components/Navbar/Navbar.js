@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 // import {Link} from 'react-router-dom';
-import {Link} from 'react-scroll';
-import {BiMenuAltRight} from 'react-icons/bi';
-import {MdClose} from 'react-icons/md';
-import './Navbar.css';
+import { Link } from "react-scroll";
+import { BiMenuAltRight } from "react-icons/bi";
+import { MdClose } from "react-icons/md";
+import "./Navbar.css";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -11,11 +11,12 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/">
-        <h1 className="logo">ArinzeN</h1>
+        <h1 className="logo">NancyO</h1>
       </Link>
       <ul
-        className={isMobile ? 'nav-links-mobile' : 'nav-links'}
-        onClick={() => setIsMobile(false)}>
+        className={isMobile ? "nav-links-mobile" : "nav-links"}
+        onClick={() => setIsMobile(false)}
+      >
         <li className="li">
           <Link activeClass="active" to="home" spy={true} smooth={true}>
             Home
@@ -38,14 +39,15 @@ function Navbar() {
         </li>
 
         <li className="li">
-          <a href="https://drive.google.com/drive/folders/1JVMEZH-KhbkrtqtOuwhS35Teu1t4PCjC?usp=sharing">
+          <a href="https://drive.google.com/file/d/11GUzPZjcAVoID3D-a9PbKfsBIZwXePze/view">
             <button className="resume">Resume</button>
           </a>
         </li>
       </ul>
       <button
         className="mobile-menu-icon"
-        onClick={() => setIsMobile(!isMobile)}>
+        onClick={() => setIsMobile(!isMobile)}
+      >
         {isMobile ? <MdClose /> : <BiMenuAltRight />}
       </button>
     </nav>

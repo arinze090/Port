@@ -5,7 +5,7 @@
   flex-direction: column;
   align-self: center;
   align-items: center;
-  background-color: #0a192f !important;
+  background-color: #fff !important;
 }
 
 .socials {
@@ -28,7 +28,7 @@ ul {
 
 li {
   padding: 20px;
-  font-family: 'Bangers';
+  font-family: "Bangers";
 }
 
 .design {
@@ -37,8 +37,8 @@ li {
 }
 
 .design > p {
-  color: whitesmoke;
-  font-family: 'Roboto Mono', monospace;
+  color: #001d4a;
+  font-family: "Roboto Mono", monospace;
   font-size: medium;
 }
 

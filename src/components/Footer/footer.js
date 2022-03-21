@@ -1,6 +1,6 @@
-import React from 'react';
-import './footer.css';
-import {FaTwitter, FaInstagram, FaGithub, FaLinkedinIn} from 'react-icons/fa';
+import React from "react";
+import "./footer.css";
+import { FaTwitter, FaLinkedinIn, FaBehance, FaDribbble } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -9,37 +9,37 @@ function Footer() {
         <div className="socials">
           <ul>
             <li>
-              <a href="http://github.com/arinze090">
-                <FaGithub
-                  style={{width: 60, height: 20, color: 'whitesmoke'}}
+              <a href="https://www.behance.net/nancyomoruyi12">
+                <FaBehance
+                  style={{ width: 60, height: 20, color: "#001d4a" }}
                 />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/arinze-nchor-nwankwo-778888130/">
+              <a href="https://www.linkedin.com/in/nancy-omoruyi-6aab30164/">
                 <FaLinkedinIn
-                  style={{width: 60, height: 20, color: 'whitesmoke'}}
+                  style={{ width: 60, height: 20, color: "#001d4a" }}
                 />
               </a>
             </li>
             <li>
-              <a href="http://twitter.com/arinze__n">
+              <a href="http://twitter.com/isokennn">
                 <FaTwitter
-                  style={{width: 60, height: 20, color: 'whitesmoke'}}
+                  style={{ width: 60, height: 20, color: "#001d4a" }}
                 />
               </a>
             </li>
             <li>
-              <a href="http://instagram.com/_arinze_n">
-                <FaInstagram
-                  style={{width: 60, height: 20, color: 'whitesmoke'}}
+              <a href="http://twitter.com/isokennn">
+                <FaDribbble
+                  style={{ width: 60, height: 20, color: "#001d4a" }}
                 />
               </a>
             </li>
           </ul>
         </div>
         <div className="design">
-          <p>Designed & Built by Arinze Nchor</p>
+          <p>Designed & Built by Nancy Omoruyi</p>
         </div>
       </div>
     </div>

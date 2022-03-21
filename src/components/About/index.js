@@ -1,83 +1,65 @@
-import React from 'react';
-import './about.css';
-import {FaReact, FaWordpress} from 'react-icons/fa';
-import {SiExpo, SiJavascript, SiHtml5, SiCss3} from 'react-icons/si';
+import React, { useEffect } from "react";
+import "./about.css";
+import { FiFigma } from "react-icons/fi";
+import { SiAdobexd, SiAdobephotoshop } from "react-icons/si";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const data = [
   {
     id: 1,
-    name: 'React',
-    icon: <FaReact />,
+    name: "Adobe XD",
+    icon: <SiAdobexd />,
   },
   {
     id: 2,
-    name: 'React Native',
-    icon: <SiExpo />,
+    name: "Figma",
+    icon: <FiFigma />,
   },
   {
     id: 3,
-    name: 'JavaScript (ES6+)',
-    icon: <SiJavascript />,
-  },
-  {
-    id: 4,
-    name: 'Html5',
-    icon: <SiHtml5 />,
-  },
-  {
-    id: 5,
-    name: 'WordPress',
-    icon: <FaWordpress />,
-  },
-  {
-    id: 6,
-    name: 'CSS',
-    icon: <SiCss3 />,
+    name: "Photoshop",
+    icon: <SiAdobephotoshop />,
   },
 ];
 
 function About() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div id="about">
       <div className="about__container">
         <div className="about__content">
-          <div className="title">
+          <div className="title" data-aos="zoom-in-right">
             <p className="aboutMe">About Me</p>
             <hr />
           </div>
 
           <div className="description">
             <div className="details">
-              {/* <ScrollAnimation
-                animateIn="wobble"
-                // initiallyVisible={true}
-                delay={1000}>
-                <p>
-                  I'm an innovative, detailed oriented developer, passionate
-                  about combining beautiful structured codes with nice
-                  interfaces and flawless functionalities. I have experience
-                  developing and designing web interfaces from simple landing
-                  pages to multi-paged web applications. My goal has always been
-                  to reconnect with craftmanship & efficiently utilize available
-                  tools and techniques to build high performance products and
-                  efficient systems
-                </p>
-              </ScrollAnimation> */}
-
-              <p>
-                I'm an innovative, detailed oriented developer, passionate about
-                combining beautiful structured codes with nice interfaces and
-                flawless functionalities. I have experience developing and
-                designing web interfaces from simple landing pages to
-                multi-paged web applications. My goal has always been to
-                reconnect with craftmanship & efficiently utilize available
-                tools and techniques to build high performance products and
-                efficient systems
+              <p data-aos="fade-in-right">
+                Conducting user research and interviews, building user flows,
+                creating low-fidelity and highfidelity prototypes and managing
+                data involved in this process of design are some of my skills.
+                For my designs, I utilize Figma and Adobe Photoshop.
               </p>
-              <p>
-                I derive pleasure in learning new and better ways of doing
-                things and buildimg efficient codes. When I'm not writing codes,
-                I probably blabbing about football, crypto or tech.
+              <p data-aos="fade-in-left">
+                I have a strong track experience of managing and coaching a wide
+                range of qualitative and quantitative research projects, and I
+                believe this is something I can add to whatever team or office I
+                find myself in.
+              </p>
+              <p data-aos="fade-in-right">
+                For my long-term goals in 3-5 years, I hope to be recognized as
+                a very resourceful designer. I really want to focus on being a
+                strong team player, leading a team that is committed to
+                producing excellent design at all costs. I want to work
+                somewhere, where I can develop myself and give back to others. I
+                believe that my skill set, which includes strong communication
+                skills and attention to detail, qualifies me for this role.
               </p>
               <p>
                 Here are a few technologies I’ve been working with recently:
@@ -85,15 +67,21 @@ function About() {
               <div className="skill">
                 {data.map((cur, index) => (
                   <div className="skills" key={index}>
-                    {/* <GiBullseye /> */}
                     <div>{cur.icon} </div>
                     <p>{cur.name} </p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="image">
-              <img src={require('../images/1.jpg')} alt="" />
+            <div
+              className="image"
+              data-aos="zoom-in-left"
+              data-aos-delay="300"
+              data-aos-offset="300"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
+              <img src={require("../images/Nancy.jpg")} alt="" />
             </div>
           </div>
         </div>
