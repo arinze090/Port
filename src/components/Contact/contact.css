@@ -17,7 +17,7 @@
   margin-bottom: 30px;
   margin-top: 30px;
   font-size: 40px;
-  color: aqua;
+  color: #001d4a;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -37,6 +37,7 @@
   font-size: 20px;
   color: #001d4a;
   font-family: "Roboto Mono", monospace;
+  margin-top: 20px;
 }
 
 .hello {
@@ -51,11 +52,6 @@
   font-size: 20px;
 }
 
-.hello :hover {
-  background-color: tomato !important;
-  color: tomato;
-}
-
 @media screen and (max-width: 768px) {
   .content__tags {
     font-size: 15px;
@@ -67,6 +63,7 @@
     font-size: 15px;
     color: #001d4a;
     font-family: "Roboto Mono", monospace;
+    margin-top: 20px;
   }
 
   .hello {
@@ -79,5 +76,14 @@
     border: 1px solid #001d4a;
     cursor: pointer;
     font-size: 15px;
+  }
+
+  .contact__container > h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #001d4a;
+    font-family: "Roboto Mono", monospace;
   }
 }

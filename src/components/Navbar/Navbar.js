@@ -9,10 +9,10 @@ function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar"> 
       <Link to="/">
         <h1 className="logo">NancyO</h1>
-      </Link>
+      </Link> 
       <ul
         className={isMobile ? "nav-links-mobile" : "nav-links"}
         onClick={() => setIsMobile(false)}
@@ -41,7 +41,7 @@ function Navbar() {
         <li className="li">
           <a href="https://drive.google.com/file/d/11GUzPZjcAVoID3D-a9PbKfsBIZwXePze/view">
             <button className="resume">Resume</button>
-          </a>
+          </a> 
         </li>
       </ul>
       <button

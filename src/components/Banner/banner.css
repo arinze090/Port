@@ -17,7 +17,7 @@
   margin-bottom: 20px;
   font-family: "Roboto Mono", monospace;
   font-size: 20px;
-  color: aqua;
+  color: #001d4a;
 }
 
 .name {
@@ -49,5 +49,6 @@
   .content {
     margin-left: 0px;
     margin-right: 0px;
+    padding: 0;
   }
 }

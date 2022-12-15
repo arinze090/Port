@@ -24,7 +24,7 @@
 .project {
   font-family: "Roboto Mono", monospace;
   font-size: 30px;
-  color: #001d4a;
+  color: #001d4a !important;
   font-weight: bold;
 }
 
@@ -227,14 +227,14 @@ hr {
     background-color: darkgreen;
   }
 
-  .img {
+  /* .img {
     width: 100%;
     height: 100%;
     margin-left: 0px;
     opacity: 1;
     transition: 0.5s ease;
     backface-visibility: hidden;
-  }
+  } */
 
   .info {
     display: flex;
@@ -313,12 +313,12 @@ hr {
     flex-wrap: nowrap;
     flex-direction: column;
     width: 100%;
-    background-color: #001d4a ;
+    background-color: #001d4a;
   }
 
   .images {
-    width: 300px;
-    height: 200px;
+    width: 550px;
+    height: 360px;
     margin: 20px;
   }
 
@@ -355,13 +355,13 @@ hr {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
   .pContain {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     width: 100%;
-    background-color: #001d4a;
+    background-color: #001d4a !important;
   }
 
   .images {
@@ -446,6 +446,7 @@ hr {
   .anchor > p {
     margin: 10px;
     color: #001d4a;
+    font-size: 10px;
   }
 
   .anchor > p :hover {

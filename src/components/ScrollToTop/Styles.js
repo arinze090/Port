@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Heading = styled.h1`
   text-align: center;
@@ -20,6 +20,4 @@ export const Button = styled.div`
   z-index: 1;
   cursor: pointer;
   color: #001d4a;
-
-  
 `;

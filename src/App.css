@@ -2,12 +2,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #fff !important;
+  /* background-color: #fff !important; */
   /* color: whitesmoke; */
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: pink !important;
+  object-fit: contain;
+  
 }
 
 .App {

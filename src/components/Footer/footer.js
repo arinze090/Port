@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import { FaTwitter, FaLinkedinIn, FaBehance, FaDribbble } from "react-icons/fa";
+import { FaTwitter, FaLinkedinIn, FaBehance } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -12,7 +12,7 @@ function Footer() {
               <a href="https://www.behance.net/nancyomoruyi12">
                 <FaBehance
                   style={{ width: 60, height: 20, color: "#001d4a" }}
-                />
+                /> 
               </a>
             </li>
             <li>
@@ -25,13 +25,6 @@ function Footer() {
             <li>
               <a href="http://twitter.com/isokennn">
                 <FaTwitter
-                  style={{ width: 60, height: 20, color: "#001d4a" }}
-                />
-              </a>
-            </li>
-            <li>
-              <a href="http://twitter.com/isokennn">
-                <FaDribbble
                   style={{ width: 60, height: 20, color: "#001d4a" }}
                 />
               </a>

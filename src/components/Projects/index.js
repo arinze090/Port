@@ -11,7 +11,7 @@ const data = [
     link: "https://www.behance.net/gallery/132955005/Case-study-for-a-finance-app-project",
     caseStudy:
       "https://drive.google.com/file/d/14feNaYhQfEfzmRAalUrMSEYN97qTD5GE/view",
-  },
+  }, 
   {
     id: 2,
     name: "Case Study for Zara's Landing Page Re-design.",
@@ -49,7 +49,7 @@ function Projects() {
       <div className="project__container">
         <div className="project__content">
           <div className="title" data-aos="zoom-in-right">
-            <p className="project">Projects I've Built 🧳</p>
+            <p className="project">Projects I've Designed 🧳</p>
             <hr />
           </div>
 
